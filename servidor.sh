@@ -48,5 +48,8 @@ fi
 
 echo "OK_FILE_NAME" | nc $IP_CLIENT $PORT
 
+echo "(8) LISTEN: Datos de vaca"
+
+nc -l $PORT > inbox/$FILE_NAME
 
 exit 0
